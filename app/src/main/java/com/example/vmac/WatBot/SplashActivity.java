@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private FloatingActionButton floatingButton;
+    private ImageView floatingButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
