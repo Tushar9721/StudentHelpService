@@ -6,5 +6,6 @@
     <color name="bg_bubble_self">#62caa6</color>
     <color name="bg_bubble_self2">#005596</color>
     <color name="bg_bubble_watbot">#FFCE00</color>
+    <color name="background_button">#E0B534</color>
     <color name="white">#FFFF</color>
 </resources>
