@@ -40,6 +40,7 @@ public class SplashActivity extends AppCompatActivity {
 
         });
 
+
         walkSafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,12 +49,11 @@ public class SplashActivity extends AppCompatActivity {
             }
         });
 
+
         mentalHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDialog("https://uwsa.ca/uwsa-services/walksafe/");
-
-
             }
         });
 
@@ -62,30 +62,22 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openDialog("https://uwsa.ca/uwsa-services/walksafe/");
-
-
             }
         });
-
 
 
         campusHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDialog("https://uwsa.ca/uwsa-services/walksafe/");
-
-
             }
         });
-
 
 
         sexualHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDialog("https://uwsa.ca/uwsa-services/walksafe/");
-
-
             }
         });
 
@@ -110,7 +102,7 @@ public class SplashActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_view);
         dialog.setCancelable(true);
         WebView browser = dialog.findViewById(R.id.webview);
-       browser.loadUrl(url);
+        browser.loadUrl(url);
         dialog.show();
 
     }

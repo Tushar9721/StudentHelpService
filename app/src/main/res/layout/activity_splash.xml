@@ -49,7 +49,7 @@
                 android:background="@drawable/bg_button"
                 android:fontFamily="@font/jbold"
                 android:padding="60dp"
-                android:text="Mental Health"
+                android:text="Mental Health Strategy"
                 android:textSize="25sp" />
 
             <Button

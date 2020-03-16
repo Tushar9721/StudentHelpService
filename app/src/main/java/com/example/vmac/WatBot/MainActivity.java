@@ -146,9 +146,16 @@ public class MainActivity extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (checkInternetConnection()) {
-                    sendMessage();
+                if(inputMessage.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(),"Query can not be left empty!!",Toast.LENGTH_SHORT).show();
+
                 }
+                else{
+                    if (checkInternetConnection()) {
+                        sendMessage();
+                    }
+                }
+
             }
         });
 
