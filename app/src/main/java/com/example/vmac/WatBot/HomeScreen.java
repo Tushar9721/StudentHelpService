@@ -77,6 +77,9 @@ public class HomeScreen extends AppCompatActivity {
         sexualHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                sexualAssault();
+
             }
         });
 
@@ -89,6 +92,16 @@ public class HomeScreen extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    private void sexualAssault() {
+
+        Dialog dialog = new Dialog(this, android.R.style.Theme_Light);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.service_sexual_assault);
+        dialog.setCancelable(true);
+        dialog.show();
 
     }
 
