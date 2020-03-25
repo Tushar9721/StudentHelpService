@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tvTextCampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/jbold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:text="Campus Help"
+        android:textColor="@color/bg_bubble_self2"
+        android:textSize="24sp" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTextCampus"
+        android:layout_marginBottom="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/semibold"
+                android:text="@string/campus_help_text"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/viewFoodPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dropdown"
+                android:drawableEnd="@drawable/ic_menu"
+                android:fontFamily="@font/jbold"
+                android:padding="20dp"
+                android:gravity="left"
+                android:text="UWin Bookstore and Food plan"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/foodLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="What is the cost of the plan"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/book_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="Where to Purchase"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/purchase_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="How to Pay "
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="Cash, Debit, Visa, Mastercard or Amex "
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/campusParking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dropdown"
+                android:drawableEnd="@drawable/ic_menu"
+                android:fontFamily="@font/jbold"
+                android:padding="20dp"
+                android:gravity="left"
+                android:text="Campus Parking"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/workShopLayoutView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/parking_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text=" Who can park "
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="Students, Faculty and Staff, Visitors and People with accessible parking needs"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="Payment method"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="American Express, Visa, Mastercard, Debit card, UWin card and Cash"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text=" Any parking related questions, contact our office at:"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/parking_ofice"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="Office hours"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="Monday - Friday (8:00am to 4:00pm)    "
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/foodServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dropdown"
+                android:drawableEnd="@drawable/ic_menu"
+                android:fontFamily="@font/jbold"
+                android:padding="20dp"
+                android:gravity="left"
+                android:text="Food Services"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/foodServiceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/food_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="Questions/concerns with regards to your meal plan? "
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/food_service_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/viewConferenceService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dropdown"
+                android:drawableEnd="@drawable/ic_menu"
+                android:fontFamily="@font/jbold"
+                android:padding="20dp"
+                android:gravity="left"
+                android:text="Conference Services"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/conferenceServiceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/conference_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="Where is the conference and accommodation services located?"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/conference_service_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/jbold"
+                    android:padding="10dp"
+                    android:text="Who to contact"
+                    android:textColor="@color/bg_bubble_self2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="10dp"
+                    android:text="@string/contact_conference_text"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

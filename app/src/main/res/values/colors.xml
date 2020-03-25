@@ -2,6 +2,8 @@
 <resources>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
+    <color name="textColor">#353535</color>
+
     <color name="colorAccent">#F5F5F5</color>
     <color name="bg_bubble_self">#62caa6</color>
     <color name="bg_bubble_self2">#005596</color>

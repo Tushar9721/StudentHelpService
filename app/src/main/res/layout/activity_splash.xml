@@ -71,7 +71,7 @@
                 android:background="@drawable/bg_button"
                 android:fontFamily="@font/jbold"
                 android:padding="60dp"
-                android:text="Fitness Advisor"
+                android:text="Fitness/personal Training"
                 android:textSize="25sp" />
 
             <Button

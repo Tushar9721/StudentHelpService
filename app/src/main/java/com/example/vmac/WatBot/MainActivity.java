@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
   private ImageButton btnSend;
   private Boolean micOn = false;
   private ImageButton btnRecord;
-  StreamPlayer streamPlayer = new StreamPlayer();
+  private static StreamPlayer streamPlayer = new StreamPlayer();
   private boolean initialRequest;
   private boolean permissionToRecordAccepted = false;
   private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
   private Assistant watsonAssistant;
   private Response<SessionResponse> watsonAssistantSession;
   private SpeechToText speechService;
-  private TextToSpeech textToSpeech;
+  private static TextToSpeech textToSpeech;
 
   private void createServices() {
     watsonAssistant = new Assistant("2019-02-28", new IamAuthenticator(mContext.getString(R.string.assistant_apikey)));
@@ -430,8 +430,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 
-    private class SayTask extends AsyncTask<String, Void, String> {
+    private static class SayTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
             streamPlayer.playStream(textToSpeech.synthesize(new SynthesizeOptions.Builder()
